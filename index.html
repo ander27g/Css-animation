@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación css</title>
+<style>
+
+    @keyframes move{
+        0%   {top: 0px; left: 0px; background: rgb(9, 43, 233); transform: rotate(360deg); transition: 0.1s; border-color: white;}
+        20%  {top: 0px; left: 300px; background: rgb(14, 55, 241); border-color: black; }
+        40%  {top: 100px; left: 0px; background: rgb(42, 28, 241); border-color: white;}
+        60%  {top: 200px; left: 300px; background: rgb(25, 120, 228); border-color: black;}
+        80%  {top: 300px; left: 0px; background: rgb(14, 101, 233);border-color: white;}
+        100% {top: 0px; left: 0px; background: rgb(14, 55, 241); border-color: black; }
+        }
+
+    @keyframes move2{
+        0%   {top: 0px; left: 300px; background: rgb(9, 43, 233); transform: rotate(360deg); transition: 0.1s; border-color: white;}
+        20%  {top: 0px; left: 0px; background: rgb(14, 55, 241); border-color: black; }
+        40%  {top: 100px; left: 300px; background: rgb(42, 28, 241); border-color: white;}
+        60%  {top: 200px; left: 0px; background: rgb(25, 120, 228); border-color: black;}
+        80%  {top: 300px; left: 300px; background: rgb(14, 101, 233);border-color: white;}
+        100% {top: 0px; left: 300px; background: rgb(14, 55, 241); border-color: black; }
+        }
+
+    @keyframes moment{
+        0%   {top: 400px; left: 0px;transform: rotate(360deg); transition: 0.1s;}
+        50%  {top: 0px; left: 0px;border-left: 100px solid #be5a5a;}
+        100%  {top: 400px; left: 0px;}   
+        }
+
+    @keyframes moment2{
+        0%   {top: 0px; left: 0px;transform: rotate(360deg); transition: 0.1s;}
+        50%  {top: 400px; left: 0px;border-left: 100px solid #be5a5a;}
+        100%  {top: 0px; left: 0px;}   
+        }
+
+    @keyframes font {
+        0%   {background-color:  rgb(80, 146, 167);}
+        20%  {background-color: rgb(70, 136, 157);}
+        40% {background-color: rgb(78, 119, 131);}
+        60%   {background-color: rgb(64, 92, 100);}
+        80%  {background-color: rgb(70, 96, 127);}
+        100% {background-color: rgb(180, 246, 267);}
+    }
+
+    body{
+      background-color: rgb(0, 0, 0);
+      padding: 100px;
+      animation: font 10s infinite ;
+      }
+
+    .cuadrado1{
+      width:150px;
+      height: 150px;
+      background: rgba(0,153,204,1);
+      border:3px solid #0066cc;
+      position: absolute;
+      margin-left: 300px;
+      margin-top: 50px;
+      margin-right: auto;
+      animation: move 10s infinite;
+      }
+     
+     .cuadrado2{
+      width:150px;
+      height: 150px;
+      background: rgba(0,153,204,1);
+      border:3px solid #0066cc;
+      position: absolute;
+      margin-left: 600px;
+      margin-top: 50px;
+      margin-right: auto;
+      animation: move2 10s infinite;  
+     }
+    
+     
+     .triangulo {
+     width: 0; 
+     height: 0; 
+     position: absolute;
+     border-left: 100px solid #e24141;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+     margin-left: 30px;
+     margin-top: 50px;
+     animation: moment 5s infinite;
+     }
+     
+     .triangulo2 {
+     width: 0; 
+     height: 0; 
+     position: absolute;
+     border-left: 100px solid #e24141;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+     margin-left: 1200px;
+     margin-top: 50px;
+     animation: moment2 5s infinite ;
+     }
+</style>
+
+
+</head>
+<body>
+    
+    <div class="cuadrado1"> </div>
+    <div class="cuadrado2"> </div>
+    <div class="triangulo"></div>
+    <div class="triangulo2"></div>
+</body>
+</html>
